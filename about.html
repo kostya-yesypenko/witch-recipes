@@ -12,23 +12,36 @@
 	<title>Про Нас</title>
 </head>
 <body>
-	<section class="header">
 		<nav>
 			<div class="name">
 				<a href="index.html" class="logo"><img src="images/recipe-keeper.svg"></a>
 				<p >ВІДЬОМСЬКІ РЕЦЕПТИ</p>
-	
 			</div>
-			<div class="nav-links">
+
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
 				<ul>
-					<li><a href="index.html">ГОЛОВНА</a></li>
+					<li><a href="">ГОЛОВНА</a></li>
 					<li><a href="recipes.html">РЕЦЕПТИ</a></li>
 					<li><a href="">МАГАЗИН</a></li>
-					<li><a href="">ПРО НАС</a></li>
-					<li><i class="fa fa-shopping-cart" href=""></i></li>
+					<li><a href="about.html">ПРО НАС</a></li>
+					<li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
 				</ul>
 			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
 		</nav>
+ 
+<!--------Javascript for Toggle Menu---------->
+	<script>
+		var NavLinks = document.getElementById("navLinks")
+		function showMenu(){
+			NavLinks.style.right = "0";
+		}
+		function hideMenu(){
+
+			NavLinks.style.right = "-200px";
+		}
+	</script>
 	</section>
     <h1 class="hr-lines"><span>ПРО НАС</span></h1>
 	<div class="creator">
